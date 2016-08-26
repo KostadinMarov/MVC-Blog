@@ -22,3 +22,37 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#toc {
+    background-color:gainsboro;
+     padding: 0px;
+     margin: 50px;
+     margin-top:10px;
+     margin-left:20px;
+     margin-right:800px
+}
+
+#begin {
+    padding: 1px;
+    margin-top:auto;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#text {
+    display: inline-block;
+}
+
+#moreText {
+    padding:20px    
+}
+
+#image1 {
+    padding:10px;
+}
+
+#header {
+    padding:20px;
+    margin-top:50px;
+    padding-bottom:5px;
+}

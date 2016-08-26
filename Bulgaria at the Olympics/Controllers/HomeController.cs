@@ -20,11 +20,6 @@ namespace Bulgaria_at_the_Olympics.Controllers
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+     
     }
 }

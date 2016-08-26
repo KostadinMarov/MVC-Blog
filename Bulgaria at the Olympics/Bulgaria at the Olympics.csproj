@@ -182,10 +182,19 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Fotos\660_5bbb69cb0f827290e3492c61a757ecd7.jpg" />
+    <Content Include="Fotos\bg.jpg" />
+    <Content Include="Fotos\rumi_obb_1.jpg" />
+    <Content Include="Fotos\sports.jpg" />
+    <Content Include="Fotos\stanka-zlateva.jpg" />
+    <Content Include="Fotos\tereza_marinova.jpg" />
+    <Content Include="Fotos\Zimni olimpiiski igri.jpg" />
+    <Content Include="Fotos\Йордан-Йовчев.jpg" />
+    <Content Include="Fotos\Медали по спортове.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="favicon.ico" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -212,7 +221,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -243,7 +251,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
