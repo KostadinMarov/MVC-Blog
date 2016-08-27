@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bulgaria_at_the_Olympics.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,9 @@ namespace Bulgaria_at_the_Olympics.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var db = new ApplicationDbContext();
+            var post = db.Posts.OrderByDescending(p => p.Date).Take(3);
+            return View(post.ToList());
         }
 
         public ActionResult About()
