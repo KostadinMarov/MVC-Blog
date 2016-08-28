@@ -38,6 +38,7 @@ namespace Bulgaria_at_the_Olympics.Controllers
         }
 
         // GET: Posts/Create
+
         [Authorize]
         public ActionResult Create()
         {
@@ -48,6 +49,7 @@ namespace Bulgaria_at_the_Olympics.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [ValidateInput(false)]
         [Authorize]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Title,Body")] Post post)
@@ -65,6 +67,7 @@ namespace Bulgaria_at_the_Olympics.Controllers
         }
 
         // GET: Posts/Edit/5
+        [Authorize(Roles = "Administrator")]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -83,11 +86,14 @@ namespace Bulgaria_at_the_Olympics.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [ValidateInput(false)]
+        [Authorize(Roles = "Administrator")]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Body,Date")] Post post)
+        public ActionResult Edit([Bind(Include = "Id,Title,Body")] Post post)
         {
             if (ModelState.IsValid)
             {
+                post.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
                 db.Entry(post).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -96,6 +102,7 @@ namespace Bulgaria_at_the_Olympics.Controllers
         }
 
         // GET: Posts/Delete/5
+        [Authorize(Roles = "Administrator")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -112,6 +119,8 @@ namespace Bulgaria_at_the_Olympics.Controllers
 
         // POST: Posts/Delete/5
         [HttpPost, ActionName("Delete")]
+        [ValidateInput(false)]
+
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
