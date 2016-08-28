@@ -188,8 +188,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Fotos\120px-Athens_1896_report_cover.jpg" />
     <Content Include="Fotos\660_5bbb69cb0f827290e3492c61a757ecd7.jpg" />
     <Content Include="Fotos\bg.jpg" />
+    <Content Include="Fotos\ekaterina_dafovska_001.jpg" />
+    <Content Include="Fotos\Olympic_rings_with_transparent_rims.svg.png" />
     <Content Include="Fotos\rumi_obb_1.jpg" />
     <Content Include="Fotos\sports.jpg" />
     <Content Include="Fotos\stanka-zlateva.jpg" />

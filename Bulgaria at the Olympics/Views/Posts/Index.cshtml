@@ -5,10 +5,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Публикации</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Нова публикация", "Create")
 </p>
 <table class="table">
     <tr>
@@ -51,14 +51,14 @@
             }
         </td>
         <td>
-            @if (User.IsInRole("Administrator"))
+            @if (User.IsInRole("Administrator") || (item.Author != null && User.Identity.Name == item.Author.UserName))
             {
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) @:|
+                @Html.ActionLink("Промени", "Edit", new { id = item.Id }) @:|
             }
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) 
-            @if (User.IsInRole("Administrator"))
+            @Html.ActionLink("Детайли", "Details", new { id=item.Id }) 
+            @if (User.IsInRole("Administrator") || (item.Author != null && User.Identity.Name == item.Author.UserName))
             {
-                @:| @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                @:| @Html.ActionLink("Изтриване", "Delete", new { id = item.Id })
             }
         </td>
     </tr>

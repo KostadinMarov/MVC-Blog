@@ -67,15 +67,16 @@ namespace Bulgaria_at_the_Olympics.Controllers
         }
 
         // GET: Posts/Edit/5
-        [Authorize(Roles = "Administrator")]
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Post post = db.Posts.Find(id);
-            if (post == null)
+            Post post = db.Posts.Include(p => p.Author).SingleOrDefault(p => p.Id == id);
+
+            if (post == null || post.Author.UserName != User.Identity.Name && !User.IsInRole("Administrator"))
             {
                 return HttpNotFound();
             }
@@ -87,7 +88,7 @@ namespace Bulgaria_at_the_Olympics.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateInput(false)]
-        [Authorize(Roles = "Administrator")]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,Title,Body")] Post post)
         {
@@ -102,15 +103,15 @@ namespace Bulgaria_at_the_Olympics.Controllers
         }
 
         // GET: Posts/Delete/5
-        [Authorize(Roles = "Administrator")]
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Post post = db.Posts.Find(id);
-            if (post == null)
+            Post post = db.Posts.Include(p => p.Author).SingleOrDefault(p => p.Id == id);
+            if (post == null || post.Author.UserName != User.Identity.Name && !User.IsInRole("Administrator"))
             {
                 return HttpNotFound();
             }

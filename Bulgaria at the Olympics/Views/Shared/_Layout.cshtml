@@ -17,13 +17,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Българско участие на олимпийски игри", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Блог", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Начало", "Index", "Home")</li>
                     <li>@Html.ActionLink("Относно", "About", "Home")</li>
-                    <li>@Html.ActionLink("Публикация", "Index", "Posts")</li>
+                    <li>@Html.ActionLink("Публикации", "Index", "Posts")</li>
                     <li>@Html.ActionLink("Нова Публикация", "Create", "Posts")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -34,7 +34,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year -Bulgaria</p>
+            <p>&copy; @DateTime.Now.Year -  Bulgaria</p>
         </footer>
     </div>
 
