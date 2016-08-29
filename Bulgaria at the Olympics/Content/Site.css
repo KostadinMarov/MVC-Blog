@@ -56,3 +56,32 @@ textarea {
     margin-top:50px;
     padding-bottom:5px;
 }
+
+#photo {
+    margin-left:50px
+}
+
+#athens {
+    margin-left:80px
+}
+ 
+#helsinki {
+    margin-left:80px
+}
+
+#melbourne {
+    margin-left:50px
+}
+
+#rome {
+    margin-right:100px
+}
+
+#tokio {
+    margin-left: 80px
+}
+
+#headertext {
+    text-align:center;
+    margin:50px;
+}
