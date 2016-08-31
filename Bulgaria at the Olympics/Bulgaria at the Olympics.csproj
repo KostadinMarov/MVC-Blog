@@ -188,20 +188,25 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Fotos\0d8f22205a7eb1c699f55f1bffc60fca.jpeg" />
     <Content Include="Fotos\1186493_400_.gif" />
     <Content Include="Fotos\1186506_400_.gif" />
     <Content Include="Fotos\1186509_400_.jpg" />
     <Content Include="Fotos\1186511_400_.gif" />
     <Content Include="Fotos\1186516_400_.gif" />
     <Content Include="Fotos\120px-Athens_1896_report_cover.jpg" />
+    <Content Include="Fotos\1280px-Olympic_Summer_Games_1968_Opening.jpg" />
     <Content Include="Fotos\1924s_poster_b.jpg" />
     <Content Include="Fotos\20120713.phmdwjptjn.jpg" />
+    <Content Include="Fotos\20120716.laklhoegcy.jpg" />
     <Content Include="Fotos\23054.jpg" />
     <Content Include="Fotos\578fd3a00250e.jpg" />
     <Content Include="Fotos\57904cbcedf8b.jpg" />
+    <Content Include="Fotos\57979b0d7dca1.jpg" />
     <Content Include="Fotos\57a0d740f708b67a3b18552373ad8298.jpeg" />
     <Content Include="Fotos\660_5bbb69cb0f827290e3492c61a757ecd7.jpg" />
     <Content Include="Fotos\7aaf9a2af8a8fabf58e2deebe31e025d.jpeg" />
+    <Content Include="Fotos\81fa996e737a6c06bd0e44e4ccfff886.jpeg" />
     <Content Include="Fotos\8de6d4ef828f52a86a1ba7a2b91b06a4.jpeg" />
     <Content Include="Fotos\BASA-3K-7-422-20-1896_Summer_Olympics.jpg" />
     <Content Include="Fotos\BASA-3K-7-422-25-1896_Summer_Olympics.jpg" />
@@ -288,7 +293,6 @@
     <Content Include="Views\Home\Mexico1968.cshtml" />
     <Content Include="Views\Home\Munich1972.cshtml" />
     <Content Include="Views\Home\Monreal1976.cshtml" />
-    <Content Include="Views\Home\Mosckow1980.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -85,3 +85,28 @@ textarea {
     text-align:center;
     margin:50px;
 }
+
+
+#firstolimpycs , #seckondolimpycs , #thirdolimpycs {
+    margin-bottom: 50px
+}
+
+#berlin1936, #helsinki1952, #melbourne1956 {
+    margin-bottom: 50px
+}
+
+#rome1960, #tokio1964, #mexico1968 {
+    margin-bottom: 50px
+}
+
+#tokio1964 {
+    margin-left:90px
+}
+
+#mexico1968 {
+    margin-right:7px
+}
+
+#munich1972photo {
+    margin-left: 40px
+}
